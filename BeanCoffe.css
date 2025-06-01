@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Clicker Scrip';
+    src: url('fonts/ClickerScript-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/PlayfairDisplay-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+}
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_background {
+    display: flex;
+    flex-direction: column;
+    width: 1366px;
+    height: 768px;
+    background-image:url("image/Header_background.jpg");
+}
