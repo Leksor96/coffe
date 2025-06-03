@@ -18,10 +18,99 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.header_background {
+.header {
     display: flex;
     flex-direction: column;
     width: 1366px;
     height: 768px;
     background-image:url("image/Header_background.jpg");
+    background-size: cover;
+}
+.text {
+    & h1 {
+        font-size: 220px;
+        font-family: "Clicker Scrip", serif;
+        margin: 0;
+        color:#FFFFFF;
+    }
+
+    & h2 {
+        font-size: 54px;
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        color:#FFFFFF;
+    }
+
+    & h3 {
+        font-size: 35px;
+        font-family: "Clicker Scrip", serif;
+        margin: 0;
+        color:#FFFFFF;
+        font-weight: 400;
+    }
+
+    & h4 {
+        font-size: 28px;
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        color:#FFFFFF;
+    }
+
+    & p {
+        font-size: 20px;
+        font-family: "Playfair Display", serif;
+        margin: 0;
+        color:#FFFFFF;
+    }
+}
+.header_navigation {
+    display: flex;
+
+}
+
+.header_navigation_logo {
+    margin-left: 93px;
+    margin-top: 21px;
+}
+
+.header_navigation_menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-left: 265px;
+    margin-top: 34px;
+
+    & a {
+        text-decoration: none;
+        font-family: "Playfair Display", serif;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+.header_navigation_button {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 220px;
+    margin-top: 20px;
+    gap: 35px;
+
+    & button {
+        background: none;
+        border: none;
+        font-family: "Playfair Display", serif;
+        color: #FFFFFF;
+        font-size: 14px;
+        text-decoration: underline;
+        padding: 14px 27px;
+        font-weight: 500;
+    }
+    & button:hover {
+        background: #F9C06A;
+        border-radius: 24px;
+        padding: 14px 27px;
+        color: #1E1E1E;
+        text-decoration: none;
+        font-weight: 500;
+    }
 }
