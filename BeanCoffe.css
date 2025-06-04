@@ -23,25 +23,21 @@ body {
     flex-direction: column;
     width: 1366px;
     height: 768px;
-    background-image:url("image/Header_background.jpg");
+    background-image:linear-gradient(89.82deg, #1E1E1E -6.88%, rgba(0, 0, 0, 0) 87.45%), url("image/Header_background.jpg");
+    background-position: center;
     background-size: cover;
 }
-.text {
+.header_text {
     & h1 {
         font-size: 220px;
         font-family: "Clicker Scrip", serif;
+        font-weight: 400;
         margin: 0;
         color:#FFFFFF;
     }
+
 
     & h2 {
-        font-size: 54px;
-        font-family: "Playfair Display", serif;
-        margin: 0;
-        color:#FFFFFF;
-    }
-
-    & h3 {
         font-size: 35px;
         font-family: "Clicker Scrip", serif;
         margin: 0;
@@ -49,11 +45,12 @@ body {
         font-weight: 400;
     }
 
-    & h4 {
-        font-size: 28px;
+    h3 {
+        font-size: 22px;
         font-family: "Playfair Display", serif;
         margin: 0;
         color:#FFFFFF;
+        font-weight: 500;
     }
 
     & p {
@@ -61,6 +58,7 @@ body {
         font-family: "Playfair Display", serif;
         margin: 0;
         color:#FFFFFF;
+        font-weight: 400 ;
     }
 }
 .header_navigation {
@@ -86,6 +84,7 @@ body {
         color: #FFFFFF;
         font-size: 14px;
         font-weight: 500;
+        cursor: pointer;
     }
 }
 .header_navigation_button {
@@ -104,6 +103,7 @@ body {
         text-decoration: underline;
         padding: 14px 27px;
         font-weight: 500;
+        cursor: pointer;
     }
     & button:hover {
         background: #F9C06A;
@@ -112,5 +112,33 @@ body {
         color: #1E1E1E;
         text-decoration: none;
         font-weight: 500;
+        cursor: pointer;
     }
+}
+.header_main_text {
+    display: flex;
+    flex-direction: column;
+    width: 527px;
+    margin-top: 116px;
+    margin-left:93px;
+}
+.header_main_button {
+    margin-top: 20px;
+    margin-left: 93px;
+
+
+    & button {
+        background: #F9C06A;
+        border: none;
+        border-radius: 24px;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        color: #1E1E1E;
+        padding: 14px 26px;
+        cursor: pointer;
+
+    }
+
 }
