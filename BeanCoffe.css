@@ -21,6 +21,9 @@ body {
     --black: rgba(0, 0, 0, 0) 87.45%;
     --soft_orange: #f9c06a;
     --white: #FFFFFF;
+    --cafe_royale: #603809;
+    --dove_gray: #707070;
+    --bridal_heath: #FFF9F1;
 }
 
 .container {
@@ -155,10 +158,13 @@ body {
         cursor: pointer;
     }
 }
-.main {
+.main_preview {
     background-color: #FFFEFC;
     display: flex;
     margin: 82px 93px;
+    margin-bottom: 0;
+    width: 1180px;
+    flex-wrap: wrap;
 
 }
 
@@ -168,7 +174,7 @@ body {
         font-family: "Playfair Display", serif;
         font-size: 54px;
         font-weight: 700;
-        color: #603809;
+        color: var(--cafe_royale);
         margin: 0;
     }
 
@@ -176,7 +182,7 @@ body {
         font-family: "Playfair Display", serif;
         font-size: 30px;
         font-weight: 700;
-        color: #1E1E1E;
+        color: var(--grey);
         margin: 0;
     }
 
@@ -184,12 +190,13 @@ body {
         font-family: "Playfair Display", serif;
         font-size: 20px;
         font-weight: 400;
-        color: #707070;
+        color: var(--dove_gray);
         margin: 0;
+        line-height: 34px;
     }
 }
 
-.main_content {
+.main_preview_content {
     width: 585px;
     gap: 29px;
 
@@ -206,9 +213,9 @@ body {
     }
 }
 
-.main_content_button {
+.main_content_preview_button {
     font-family: "Playfair Display", serif;
-    color: #1E1E1E;
+    color: var(--grey);
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
@@ -216,10 +223,10 @@ body {
     border-radius: 24px ;
     padding: 13px 23px;
     border: none;
-    background: #F9C06A;
+    background: var(--soft_orange);
 }
 
-.main_content_image {
+.main_preview_image {
     margin-left: 95px;
 
     & img {
@@ -230,6 +237,105 @@ body {
 
 .main_image_left {
     position: relative;
-    right: 500px;
-    bottom: 190px;
+    right: 92px;
+    bottom: 72px;
+}
+
+
+.main_coffee {
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    align-items: center;
+    gap: 16px;
+    margin-left: 93px;
+    margin-right: 93px;
+
+
+    .main_text {
+
+        & p {
+            margin-left: 15px;
+        }
+    }
+}
+
+.main_coffee_cards {
+    display: flex;
+    margin-top: 16px;
+    gap: 20px;
+}
+
+.coffeecard {
+    width: 280px;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bridal_heath);
+    gap: 6px;
+
+    & img {
+        width: 280px;
+        height: 210px;
+        margin-bottom: 8px ;
+    }
+
+    & h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & p {
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--grey);
+        margin: 0;
+    }
+
+    & button {
+        position: relative;
+        font-family: "Playfair Display", serif;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 14px 26px ;
+        background: var(--soft_orange);
+        cursor: pointer;
+        color: var(--grey);
+        border-radius: 24px;
+        border: none;
+        top: 20px
+    }
+}
+
+.main_img_right {
+    position: relative;
+    right: -533px;
+    top: 26px;
+
+    & img {
+        width: 298px;
+        height: 200px;
+    }
+}
+
+.main_advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: -109px;
+
 }
