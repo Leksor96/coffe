@@ -16,6 +16,13 @@ body {
     margin: 0;
 }
 
+:root {
+    --grey: #1e1e1e -6.88%;
+    --black: rgba(0, 0, 0, 0) 87.45%;
+    --soft_orange: #f9c06a;
+    --white: #FFFFFF;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -23,13 +30,11 @@ body {
 }
 
 .header {
-    --grey : #1e1e1e -6.88%;
-    --white : rgba(0, 0, 0, 0) 87.45%;
     display: flex;
     flex-direction: column;
     width: 1366px;
     height: 768px;
-    background-image:linear-gradient(89.82deg, var(--grey),var(--white)), url("image/Header_background.jpg");
+    background-image:linear-gradient(89.82deg, var(--grey),var(--black)), url("image/Header_background.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -41,14 +46,14 @@ body {
         font-family: "Clicker Scrip", serif;
         font-weight: 400;
         margin: 0;
-        color:#FFFFFF;
+        color:var(--white);
     }
 
     & h2 {
         font-size: 35px;
         font-family: "Clicker Scrip", serif;
         margin: 0;
-        color:#FFFFFF;
+        color:var(--white);
         font-weight: 400;
     }
 
@@ -56,7 +61,7 @@ body {
         font-size: 22px;
         font-family: "Playfair Display", serif;
         margin: 0;
-        color:#FFFFFF;
+        color:var(--white);
         font-weight: 500;
     }
 
@@ -64,7 +69,7 @@ body {
         font-size: 20px;
         font-family: "Playfair Display", serif;
         margin: 0;
-        color:#FFFFFF;
+        color:var(--white);
         font-weight: 400 ;
     }
 }
@@ -88,7 +93,7 @@ body {
     & a {
         text-decoration: none;
         font-family: "Playfair Display", serif;
-        color: #FFFFFF;
+        color: var(--white);
         font-size: 14px;
         font-weight: 500;
         cursor: pointer;
@@ -106,7 +111,7 @@ body {
         background: none;
         border: none;
         font-family: "Playfair Display", serif;
-        color: #FFFFFF;
+        color: var(--white);
         font-size: 14px;
         text-decoration: underline;
         padding: 14px 27px;
@@ -115,10 +120,10 @@ body {
     }
 
     & button:hover {
-        background: #F9C06A;
+        background: var(--soft_orange);
         border-radius: 24px;
         padding: 14px 27px;
-        color: #1E1E1E;
+        color: var(--grey);
         text-decoration: none;
         font-weight: 500;
         cursor: pointer;
@@ -138,14 +143,14 @@ body {
     margin-left: 93px;
 
     & button {
-        background: #F9C06A;
+        background: var(--soft_orange);
         border: none;
         border-radius: 24px;
         font-family: "Playfair Display", serif;
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
-        color: #1E1E1E;
+        color: var(--grey);
         padding: 14px 26px;
         cursor: pointer;
     }
