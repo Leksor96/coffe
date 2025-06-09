@@ -461,7 +461,6 @@ body {
     height: 574px;
     background-image: url("image/been_backgroud.png");
     background-size: cover;
-    background-position: right ;
 
     & img {
         width: 300px;
