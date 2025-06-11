@@ -188,6 +188,7 @@ body {
     }
 }
 
+/* поменять margin-top: 82px; на значение -82px */
 .main_coffee {
     display: flex;
     flex-direction: column;
