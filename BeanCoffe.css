@@ -160,7 +160,7 @@ body {
     }
 }
 
-.main_text {
+main {
 
     & h1 {
         font-family: "Playfair Display", serif;
@@ -198,12 +198,8 @@ body {
     margin-left: 93px;
     margin-right: 93px;
 
-
-    .main_text {
-
-        & p {
+    & p {
             margin-left: 15px;
-        }
     }
 }
 
