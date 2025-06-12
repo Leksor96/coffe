@@ -109,7 +109,7 @@ body {
     justify-content: space-between;
     margin-left: 220px;
     margin-top: 20px;
-    gap: 35px;
+    gap: 8px;
 
     & button {
         background: none;
@@ -167,10 +167,9 @@ body {
     margin-bottom: 0;
     width: 1180px;
     flex-wrap: wrap;
-
 }
 
-.main_text {
+main {
 
     & h1 {
         font-family: "Playfair Display", serif;
