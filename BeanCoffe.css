@@ -32,20 +32,41 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-.header {
-    display: flex;
-    flex-direction: column;
-    width: 1366px;
-    height: 768px;
-    background-image:linear-gradient(89.82deg, var(--grey),var(--black)), url("image/Header_background.jpg");
-    background-position: center;
-    background-size: cover;
-}
-
-.header_text {
+.text {
 
     & h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 54px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: var(--cafe_royale);
+        margin: 0;
+    }
+
+    & text {
         font-size: 220px;
         font-family: "Clicker Scrip", serif;
         font-weight: 400;
@@ -53,41 +74,68 @@ body {
         color:var(--white);
     }
 
-    & h2 {
-        font-size: 35px;
-        font-family: "Clicker Scrip", serif;
-        margin: 0;
-        color:var(--white);
-        font-weight: 400;
-    }
-
-    h3 {
-        font-size: 22px;
-        font-family: "Playfair Display", serif;
-        margin: 0;
-        color:var(--white);
-        font-weight: 500;
-    }
-
     & p {
-        font-size: 20px;
         font-family: "Playfair Display", serif;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--dove_gray);
         margin: 0;
-        color:var(--white);
-        font-weight: 400 ;
+        line-height: 34px;
+    }
+
+    & button {
+        font-family: "Playfair Display", serif;
+        color: var(--grey);
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        border-radius: 24px ;
+        padding: 13px 23px;
+        border: none;
+        background: var(--soft_orange);
     }
 }
 
-.header_navigation {
+header {
+    display: flex;
+    flex-direction: column;
+    width: 1366px;
+    height: 768px;
+    background-image:linear-gradient(89.82deg, var(--grey),var(--black)), url("image/Header_background.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .text {
+
+        & h3 {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        & p {
+            color: var(--white);
+        }
+    }
+}
+
+.navigation {
     display: flex;
 }
 
-.header_navigation_logo {
+.navigation_logo {
     margin-left: 93px;
     margin-top: 21px;
+
+    .text {
+
+        & text {
+            font-size: 35px;
+        }
+    }
 }
 
-.header_navigation_menu {
+nav {
     display: flex;
     justify-content: space-between;
     gap: 60px;
@@ -104,7 +152,7 @@ body {
     }
 }
 
-.header_navigation_button {
+.navigation_button {
     display: flex;
     justify-content: space-between;
     margin-left: 220px;
@@ -162,7 +210,7 @@ body {
 
 main {
 
-    & h1 {
+    /*& h1 {
         font-family: "Playfair Display", serif;
         font-size: 54px;
         font-weight: 700;
@@ -198,7 +246,7 @@ main {
         padding: 13px 23px;
         border: none;
         background: var(--soft_orange);
-    }
+    }*/
 }
 
 .main_preview {
