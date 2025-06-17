@@ -50,8 +50,6 @@ h2 {
     margin: 0;
 }
 
-
-
 h3 {
     font-family: "Playfair Display", serif;
     font-size: 28px;
@@ -107,7 +105,6 @@ header {
     & p {
         color: var(--white);
     }
-
 }
 
 .navigation {
@@ -190,6 +187,5 @@ nav {
         width: 134px;
         font-weight: 700;
         height: 48px;
-
     }
 }
