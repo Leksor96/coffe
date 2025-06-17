@@ -172,7 +172,7 @@ nav {
     flex-direction: column;
     width: 527px;
     margin-top: 116px;
-    margin-left:93px;
+    margin-left: 93px;
     font-size: 220px;
     font-family: "Clicker Scrip", serif;
     font-weight: 400;
@@ -188,11 +188,29 @@ nav {
         font-weight: 700;
         height: 48px;
     }
+}
+
+.preview {
+    background-color: #FFFEFC;
+    display: flex;
+    margin: 82px 93px;
+    margin-bottom: 0;
+    width: 1180px;
+    flex-wrap: wrap;
+}
+
+.preview_content {
+    width: 585px;
+    gap: 29px;
+
+    & h1 {
+            margin-top: 68px;
+            margin-bottom: 29px;
+    }
 
     & p {
         margin-bottom: 29px;
     }
-
 }
 
 .preview_image {
@@ -204,7 +222,7 @@ nav {
     }
 }
 
-.image_left {
+.coffee_blast {
     position: relative;
     right: 92px;
     bottom: 72px;
