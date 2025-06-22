@@ -398,3 +398,151 @@ nav {
         margin-left: 60px;
     }
 }
+
+.Our-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 82px;
+}
+
+
+
+ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    padding-top: 75%;
+    width: 980px;
+    margin-top: 29px;
+
+
+}
+
+.carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    height: 600px;
+
+}
+
+.carousel__slide {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    flex: 0 0 100%;
+    width: 980px;
+    height: 524px;
+    background-color: #FFF9F1;
+    border: none;
+}
+
+
+.carousel__slide:before {
+    position: absolute;
+    color: #fff;
+    font-size: 2em;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+    position: absolute;
+    top: 0;
+    margin-top: 221px;
+    width: 82px;
+    height: 82px;
+    border-radius: 16px;
+    font-size: 0;
+    outline: 0;
+
+}
+
+.carousel::before,
+.carousel__prev {
+    left: -40px;
+}
+
+.carousel::after,
+.carousel__next {
+    right: -20px;
+}
+
+.carousel::before,
+.carousel::after {
+    content: '';
+    z-index: 1;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+.carousel_text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    & div {
+        font-family: "Playfair Display", serif;
+        font-size: 220px;
+        line-height: 112px;
+        color: #603809;
+        margin-top: 54px;
+        margin-left: 29px;
+    }
+
+    & p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 36px;
+        margin: -35px 100px 0 100px;
+        text-align: center ;
+    }
+
+    & h2 {
+        font-size: 32px;
+        margin-top: 28px;
+        margin-left: 385px;
+    }
+
+    & h4 {
+        font-size: 20px;
+        color: var(--dove_gray);
+        line-height: 34px;
+        margin-top: 4px;
+        margin-left: 417px;
+    }
+
+    & img {
+        position: relative;
+        width: 112px;
+        height: 112px;
+        border-radius: 16px;
+        left: 434px;
+        top: 45px;
+    }
+
+
+
+
+}
