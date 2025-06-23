@@ -227,3 +227,56 @@ nav {
     right: 92px;
     bottom: 72px;
 }
+
+.coffee {
+    display: flex;
+    flex-direction: column;
+    margin-top: -80px;
+    align-items: center;
+    gap: 16px;
+    margin-left: 93px;
+    margin-right: 93px;
+    margin-bottom: 15px;
+
+    & p {
+        margin-left: 15px;
+    }
+}
+
+.coffee_cards {
+    display: flex;
+    margin-top: 16px;
+    gap: 20px;
+}
+
+.coffeecard {
+    width: 280px;
+    height: 364px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bridal_heath);
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cafe_royale);
+    margin: 0;
+    gap: 6px;
+
+    & img {
+        width: 280px;
+        height: 210px;
+        margin-bottom: 14px ;
+    }
+
+
+    & button {
+        position: relative;
+        padding: 14px 26px ;
+        top: 5px;
+    }
+
+    & p {
+        color: var(--grey);
+    }
+}
