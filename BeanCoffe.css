@@ -404,103 +404,84 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 16px;
-    margin-top: 82px;
+    margin-top: -218px;
 }
 
-
-
-ol, li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.carousel {
-    position: relative;
-    padding-top: 75%;
-    width: 980px;
-    margin-top: 29px;
-
-
-}
-
-.carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+ul {
     display: flex;
-    overflow: hidden;
-    counter-reset: item;
-    scroll-behavior: smooth;
+    width: 980px;
+    gap: 4vw;
+    padding-left: 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    height: 600px;
-
 }
 
-.carousel__slide {
-    display: flex;
-    flex-direction: column;
-
-    position: relative;
-    flex: 0 0 100%;
+li {
     width: 980px;
-    height: 524px;
-    background-color: #FFF9F1;
-    border: none;
+    flex: 0 0 100%;
+    padding-top: 20px;
+    scroll-snap-align: start;
+
+    & img {
+        position: relative;
+        width: 112px;
+        height: 112px;
+        border-radius: 16px;
+        left: 434px;
+        top: -55px;
+        z-index: 1;
+        object-fit: cover;
+    }
 }
 
-
-.carousel__slide:before {
-    position: absolute;
-    color: #fff;
-    font-size: 2em;
+ul::-webkit-scrollbar {
+    width: 0;
 }
 
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 221px;
+ul::scroll-button(*) {
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    color: rgb(0 0 0 / 0.7);
+    cursor: pointer;
+}
+
+ul::scroll-button(left) {
+    content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 9V16L0 8L8 0V7H16V9H8Z' fill='%23603809'/%3E%3C/svg%3E%0A");
+}
+
+ul::scroll-button(right) {
+    content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 9V16L16 8L8 0V7H0V9H8Z' fill='%23603809'/%3E%3C/svg%3E%0A");
+}
+
+ul::scroll-button(*) {
+    position: relative;
     width: 82px;
     height: 82px;
-    border-radius: 16px;
-    font-size: 0;
-    outline: 0;
-
+    background-color: var(--soft_orange);
+    border-radius: 24px;
 }
 
-.carousel::before,
-.carousel__prev {
-    left: -40px;
+ul::scroll-button(left) {
+    right: calc(anchor(left) - 45px);
+    top: -483px;
+    right: 490px;
 }
 
-.carousel::after,
-.carousel__next {
-    right: -20px;
-}
-
-.carousel::before,
-.carousel::after {
-    content: '';
-    z-index: 1;
-    background-size: 1.5rem 1.5rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    text-align: center;
-    pointer-events: none;
+ul::scroll-button(right) {
+    left: calc(anchor(right) - 45px);
+    top: -580px;
+    left: 490px;
 }
 
 .carousel_text {
+    width: 980px;
+    height: 524px;
     display: flex;
     flex-direction: column;
     margin: 0;
+    background-color: var(--bridal_heath);
 
     & div {
         font-family: "Playfair Display", serif;
@@ -516,7 +497,7 @@ ol, li {
         font-size: 18px;
         line-height: 36px;
         margin: -35px 100px 0 100px;
-        text-align: center ;
+        text-align: center;
     }
 
     & h2 {
@@ -532,17 +513,16 @@ ol, li {
         margin-top: 4px;
         margin-left: 417px;
     }
+}
 
-    & img {
-        position: relative;
-        width: 112px;
-        height: 112px;
-        border-radius: 16px;
-        left: 434px;
-        top: 45px;
-    }
+.our-coofee_coffee-blast_top {
+    position: relative;
+    top: 350px;
+    left: 460px;
+}
 
-
-
-
+.our-coofee_coffee-blast_bot {
+    position: relative;
+    top: -553px;
+    left: -481px;
 }
