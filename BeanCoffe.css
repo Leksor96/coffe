@@ -443,7 +443,6 @@ ul::scroll-button(*) {
     border: 0;
     font-size: 2rem;
     background: none;
-    color: rgb(0 0 0 / 0.7);
     cursor: pointer;
 }
 
@@ -487,7 +486,7 @@ ul::scroll-button(right) {
         font-family: "Playfair Display", serif;
         font-size: 220px;
         line-height: 112px;
-        color: #603809;
+        color: var(--cafe_royale);
         margin-top: 54px;
         margin-left: 29px;
     }
