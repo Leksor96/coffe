@@ -522,6 +522,32 @@ ul::scroll-button(right) {
 
 .our-coofee_coffee-blast_bot {
     position: relative;
-    top: -553px;
+    margin-top: -500px;
+    top: -53px;
     left: -481px;
 }
+
+.Subscribe_to_get {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/main_footer.jpg");
+
+    & h1 {
+        color: var(--white);
+        margin-top: 80px;
+    }
+
+    & p {
+        color: var(--white);
+        margin-top: 16px;
+    }
+
+
+
+
+}
+
