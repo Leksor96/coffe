@@ -269,7 +269,6 @@ nav {
         margin-bottom: 14px ;
     }
 
-
     & button {
         position: relative;
         padding: 14px 26px ;
@@ -279,4 +278,65 @@ nav {
     & p {
         color: var(--grey);
     }
+}
+
+.img_coffe-blast {
+    position: relative;
+    right: -506px;
+    top: 165px;
+
+    & img {
+        height: 200px;
+    }
+}
+
+.advantages {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    margin-top: -109px;
+
+    & button {
+        padding: 14px 41px;
+        margin-top: 8px;
+    }
+
+    & h4 {
+        margin-top: -16px;
+    }
+}
+
+.advantages_cards {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 16px;
+}
+
+.advantagescard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bridal_heath);
+    width: 280px;
+    height: 284px;
+
+    & p {
+        margin: 0 35px;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    & img {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 25px;
+    }
+}
+
+.advantagescard:hover {
+    background-color: var(--derby);
 }
