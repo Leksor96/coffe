@@ -348,7 +348,7 @@ nav {
     height: 574px;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/main_footer.jpg");
+    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/amazing_morning_background.jpg");
     margin-top: 82px ;
 }
 
