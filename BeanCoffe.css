@@ -105,7 +105,6 @@ header {
     & p {
         color: var(--white);
     }
-
 }
 
 .navigation {
@@ -188,7 +187,6 @@ nav {
         width: 134px;
         font-weight: 700;
         height: 48px;
-
     }
 }
 
@@ -199,8 +197,8 @@ nav {
     margin-bottom: 0;
     width: 1180px;
     flex-wrap: wrap;
-
 }
+
 .preview_content {
     width: 585px;
     gap: 29px;
@@ -213,7 +211,6 @@ nav {
         & p {
             margin-bottom: 29px;
         }
-
 }
 
 .preview_image {
@@ -230,7 +227,6 @@ nav {
     right: 92px;
     bottom: 72px;
 }
-
 
 .coffee {
     display: flex;
@@ -272,7 +268,6 @@ nav {
         height: 210px;
         margin-bottom: 14px ;
     }
-
 
     & button {
         position: relative;
@@ -329,7 +324,6 @@ nav {
     width: 280px;
     height: 284px;
 
-
     & p {
         margin: 0 35px;
         text-align: center;
@@ -366,7 +360,6 @@ nav {
     height: 304px;
     margin-top: 135px;
     margin-left: 93px ;
-
 
     & h1 {
         color: var(--white);
@@ -652,6 +645,10 @@ footer {
         display: flex;
         gap: 20px;
     }
+}
+
+.address {
+    line-height: 30px ;
 }
 
 .footer_content_contacts {
