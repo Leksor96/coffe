@@ -348,7 +348,7 @@ nav {
     align-items: center;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/main_footer.jpg");
+    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/subscribe to get background.jpg");
     height: 374px;
 
     & h1 {
