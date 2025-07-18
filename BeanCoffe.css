@@ -396,8 +396,11 @@ footer {
     }
 }
 
-.address {
+address {
     line-height: 30px ;
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 400;
 }
 
 .footer_content_contacts {
