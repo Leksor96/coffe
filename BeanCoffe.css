@@ -342,6 +342,79 @@ nav {
     background-color: var(--derby);
 }
 
+.subscribe-to-get {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(var(--coffee), var(--coffee)), url("image/subscribe to get background.jpg");
+    height: 374px;
+
+    & h1 {
+        color: var(--white);
+        margin-top: 80px;
+    }
+
+    & p {
+        color: var(--white);
+        margin-top: 16px;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 80px;
+
+    & input {
+        margin-left: 154px;
+        width: 642px;
+        height: 66px;
+        font-family: "Playfair Display", serif;
+        font-size: 20px;
+        line-height: 34px;
+        padding-left: 26px;
+        border-radius: 4px;
+        background-color: var(--bridal_heath);
+        border: none;
+    }
+
+    & button {
+        position: relative;
+        right: 140px;
+        height: 68px;
+        background-color: var(--soft_orange);
+        border-radius: 4px;
+        color: var(--cafe_royale);
+        font-size: 22px;
+        font-weight: 700;
+        border: none;
+    }
+}
+
+.Subscribe-to-get_images {
+
+    & :nth-child(1) {
+        position: relative;
+        top: -227px;
+        left: 685px;
+        width: 250px;
+        height: 358px;
+    }
+
+    & :nth-child(2) {
+        position: relative;
+        top: -203px;
+        right: 686px;
+        width: 250px;
+        height: 358px;
+    }
+}
+
 footer {
     width: 1366px ;
     height: 492px;
