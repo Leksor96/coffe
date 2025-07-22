@@ -342,6 +342,134 @@ nav {
     background-color: var(--derby);
 }
 
+.our-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: -218px;
+}
+
+ul {
+    display: flex;
+    width: 980px;
+    gap: 4vw;
+    padding-left: 0;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+li {
+    width: 980px;
+    flex: 0 0 100%;
+    padding-top: 20px;
+    scroll-snap-align: start;
+
+    & img {
+        position: relative;
+        width: 112px;
+        height: 112px;
+        border-radius: 16px;
+        left: 434px;
+        top: -55px;
+        z-index: 1;
+        object-fit: cover;
+    }
+}
+
+ul::-webkit-scrollbar {
+    width: 0;
+}
+
+ul::scroll-button(*) {
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    cursor: pointer;
+}
+
+ul::scroll-button(left) {
+    content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 9V16L0 8L8 0V7H16V9H8Z' fill='%23603809'/%3E%3C/svg%3E%0A");
+}
+
+ul::scroll-button(right) {
+    content: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 9V16L16 8L8 0V7H0V9H8Z' fill='%23603809'/%3E%3C/svg%3E%0A");
+}
+
+ul::scroll-button(*) {
+    position: relative;
+    width: 82px;
+    height: 82px;
+    background-color: var(--soft_orange);
+    border-radius: 24px;
+}
+
+ul::scroll-button(left) {
+    right: calc(anchor(left) - 45px);
+    top: -483px;
+    right: 490px;
+}
+
+ul::scroll-button(right) {
+    left: calc(anchor(right) - 45px);
+    top: -580px;
+    left: 490px;
+}
+
+.carousel_text {
+    width: 980px;
+    height: 524px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--bridal_heath);
+
+    & div {
+        font-family: "Playfair Display", serif;
+        font-size: 220px;
+        line-height: 112px;
+        color: var(--cafe_royale);
+        margin-top: 54px;
+        margin-left: 29px;
+    }
+
+    & p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 36px;
+        margin: -35px 100px 0 100px;
+        text-align: center;
+    }
+
+    & h2 {
+        font-size: 32px;
+        margin-top: 28px;
+        margin-left: 385px;
+    }
+
+    & h4 {
+        font-size: 20px;
+        color: var(--dove_gray);
+        line-height: 34px;
+        margin-top: 4px;
+        margin-left: 417px;
+    }
+}
+
+.our-coofee_coffee-blast_top {
+    position: relative;
+    top: 350px;
+    left: 460px;
+}
+
+.our-coofee_coffee-blast_bot {
+    position: relative;
+    margin-top: -500px;
+    top: -53px;
+    left: -481px;
+}
+
 .subscribe-to-get {
     margin-top: 82px;
     display: flex;
